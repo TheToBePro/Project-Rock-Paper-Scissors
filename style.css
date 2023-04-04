@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Alkatra", cursive;
+  background-color: #bdb5b5;
+  background-image: url("Images/Rock.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+.container {
+  width: 75%;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  padding: 70px;
+  font-size: 50px;
+}
+
+h1 .Rock-logo {
+  color: black;
+}
+h1 .paper-logo {
+  color: #029e17;
+}
+h1 .scissors-logo {
+  color: rgb(0, 247, 255);
+}
+h2 {
+  text-align: center;
+  padding: 24px 4px;
+  color: white;
+  font-size: 40px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.buttons button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.buttons button i {
+  color: white;
+}
+.buttons button:hover {
+  background-color: #3e8e41;
+}
+
+.buttons button:hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: bubble 1s;
+}
+
+@keyframes bubble {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.buttons button i {
+  font-size: 150px;
+}
+
+.buttons .Paper .paper {
+  font-size: 120px;
+}
+.score {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.score h3 {
+  color: white;
+  font-size: 30px;
+}
